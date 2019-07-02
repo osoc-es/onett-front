@@ -1,4 +1,4 @@
-# y
+# TRIS
 
 > My divine Nuxt.js project
 
