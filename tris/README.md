@@ -1,7 +1,6 @@
-# y
+# TRIS
 
-> My divine Nuxt.js project
-
+> Web page to transform CSV files to RDF
 ## Build Setup
 
 ``` bash
