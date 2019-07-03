@@ -1,0 +1,21 @@
+.redBg{
+    background: red;
+}
+.fill{
+    min-height: 100vh;
+    height: 100%;
+  }
+body, html, h1, h2, h3, h4, h5, h6, ul, li{
+    padding: 0;
+    margin:0;
+    float:none;
+}
+a{
+    color:inherit!important;
+}
+.noPadding{
+    padding: 0%;
+}
+.mwidth{
+    max-width: 100%;
+}
