@@ -1,16 +1,16 @@
 <template>
-<div class="blackBg">
-  <div class="row d-flex flex-wrap align-items-center container-fluid"> 
-    <div class="col-md-4 p-3">
+<nav class="blackBg ">
+  <div class="row d-flex flex-wrap align-items-center container-fluid paddingless"> 
+    <div class="col-md-2 p-3">
       <button class="btn text-white boxed raleway">
         <h2>ONETT</h2>
       </button>
     </div>
     <div v-for="linkItem in links" class="col-md-2 text-center" :key="linkItem.name">
-      <button class="btn text-white">{{linkItem.name}}</button>
+      <a  :href="linkItem.link" class="btn text-white raleway">{{linkItem.name}}</a>
     </div>
   </div>  
-</div>
+</nav>
 
 </template>
 <style>
