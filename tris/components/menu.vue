@@ -1,18 +1,27 @@
 <template>
-  <div> 
-    <ul class="noList text-light redBg fill">
-      <li class="title">
-        <h1>27TRIPS</h1>
-      </li>
-      <li v-for="linkItem in links" :key="linkItem.name" class="pt-5">
-        <a :href="linkItem.link"><h4>{{linkItem.name}}</h4></a>
-      </li>
-    </ul>
+<div class="blackBg">
+  <div class="row d-flex flex-wrap align-items-center container-fluid"> 
+    <div class="col-md-4 p-3">
+      <button class="btn text-white boxed raleway">
+        <h2>ONETT</h2>
+      </button>
+    </div>
+    <div v-for="linkItem in links" class="col-md-2 text-center" :key="linkItem.name">
+      <button class="btn text-white">{{linkItem.name}}</button>
+    </div>
   </div>  
+</div>
+
 </template>
 <style>
 .noList{
   list-style-type: none;
+}
+.boxed{
+  background: inherit;
+color: #ffffff;
+border-radius: 0px;
+border: 2px solid;
 }
 </style>
 <script>

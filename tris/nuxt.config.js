@@ -46,5 +46,8 @@ export default {
     */
     extend(config, ctx) {
     }
-  }
+  },
+  devServer: {
+    proxy: 'http://localhost:3333/',
+}
 }

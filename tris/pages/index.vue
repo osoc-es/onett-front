@@ -1,6 +1,6 @@
 <template>
-<div class="row mwidth">
-    <NavBarItem class=" col-sm-2"></NavBarItem>
+<div class="row">
+    <NavBarItem class=" col-sm-12"></NavBarItem>
 </div>
     
 </template>

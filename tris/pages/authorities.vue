@@ -1,6 +1,6 @@
 <template>
-<div id="authorities" class="row mwidth">
-<NavBarItem class="col-sm-2"></NavBarItem>
+<div id="authorities" class="row mwidth ">
+<NavBarItem class="col-md-12"></NavBarItem>
 <fileuploaderform class="col-sm"></fileuploaderform>
 </div>
 </template>
