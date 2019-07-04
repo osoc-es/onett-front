@@ -7,3 +7,4 @@ $ git clone https://github.com/osoc-es/onett-front.git
 $ cd onnet-front/onettVuePage  
 $ npm install  
 ```
+oSoc'19 Madrid, Spain.
