@@ -3,7 +3,7 @@
 These is the front end repository of the web ONETT, is develeped in VueJS.  
 ## INSTALLATION  
 ```
-$ git clone https://github.com/osoc-es/onnet-front.git  
+$ git clone https://github.com/osoc-es/onett-front.git  
 $ cd onnet-front/tris  
 $ npm install  
 ```
