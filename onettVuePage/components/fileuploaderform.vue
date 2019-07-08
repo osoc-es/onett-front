@@ -32,6 +32,8 @@
     <div class="pb-2 text-right">
       <button class=" btn btn-outline-dark raleway" :onclick="upload()">UPLOAD</button>
     </div>
+    <div v-if="!correct" class="alert alert-danger">The file is not uploaded.</div>
+    <div v-else class="alert alert-success">File succesfully uploaded.</div>
   </div>
 </template>
 <style>
@@ -50,23 +52,25 @@ export default {
           agency:'',
           filename:'',
         },
+        correct:Boolean,
       }
     },
     methods: {
       upload(){
-        if(this.form.file){
+        if(this.form.file && !this.correct){
           console.log(this.form.file)
-          this.form.filename = this.form.agency + "." + this.form.city + "." + this.form.country;
-          serverRequests.uploadFile(this.form);
+          let DateString = new Date();
+          let currentDate = DateString.getDate() + "" + DateString.getMonth()  +  "" + DateString.getFullYear() + "" + DateString.getHours() + "" + DateString.getMinutes();
+          this.form.filename = this.form.agency + "_" + this.form.city + "_" + this.form.country + "_"  + currentDate + ".zip" ;
+          this.correct = serverRequests.uploadFile(this.form);
         }
       }
     }, 
     mounted(){
-      /*
       this.form.country = "Spain";
       this.form.city = "Madird";
       this.form.agency = "CTRM";
-      */
+      this.correct = false;
     }
 
 }
