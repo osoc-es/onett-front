@@ -22,6 +22,13 @@
     >
     </b-form-input>      
     </div>
+        <div class="pb-2">
+    <b-form-input
+    v-model="form.transport"
+    placeholder="Introduce the type of transport."
+    >
+    </b-form-input>      
+    </div>
     <div class="pb-2">
     <b-form-file
       v-model="form.file"
@@ -50,6 +57,7 @@ export default {
           country:'',
           city:'',
           agency:'',
+          transport:'',
           filename:'',
         },
         correct:Boolean,
@@ -70,6 +78,7 @@ export default {
       this.form.country = "Spain";
       this.form.city = "Madird";
       this.form.agency = "CTRM";
+      this.form.transport = "Bus";
       this.correct = false;
     }
 

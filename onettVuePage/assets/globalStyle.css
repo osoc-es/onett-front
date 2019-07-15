@@ -7,7 +7,7 @@
     background: red;
 }
 .fill{
-    min-height: 100vh;
+    min-height: 60vh;
     height: 100%;
   }
 body, html, h1, h2, h3, h4, h5, h6, ul, li{
@@ -17,6 +17,10 @@ body, html, h1, h2, h3, h4, h5, h6, ul, li{
 }
 a{
     color:inherit!important;
+
+}
+a:hover{
+    text-decoration: none;
 }
 .noPadding{
     padding: 0%;
@@ -29,4 +33,42 @@ a{
 }
 .white-text{
     color: #ffffff!important;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+body{
+    max-width: 100%;
+}
+.greyBg{
+    background: rgba(0,0,0,0.9)
+}
+.goFront{
+    z-index: 100;
+}
+.regularText{
+    font-size: 1.5rem;
+}
+.gradientHover:hover{
+    background: rgb(255,174,6);
+    background: linear-gradient(90deg, rgba(255,174,6,1) 0%, rgba(255,62,43,1) 100%);
+    color: white;
+    border-color: #ffffff;
+
+}
+.greyColor{
+    color: #616161;
+}
+.customButton{
+background: inherit;
+border-radius: 5px;
+border-color: #616161;
+border: 2px solid;
+color:#616161
+}
+.menuButton{
+    background: inherit;
+    color:#616161; 
+    border-color: inherit;
+
 }

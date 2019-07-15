@@ -36,6 +36,19 @@ export default {
   modules: [
     // Doc: https://bootstrap-vue.js.org/docs/
     'bootstrap-vue/nuxt',
+    [
+      'nuxt-fontawesome', {
+        imports: [
+         {
+           set: '@fortawesome/free-solid-svg-icons',
+           icons: ['fas']
+         },
+         {
+           set:'@fortawesome/free-brands-svg-icons',
+           icons: ['fab']
+         }
+       ]
+      }]
   ],
   /*
   ** Build configuration
@@ -49,5 +62,6 @@ export default {
   },
   devServer: {
     proxy: 'http://localhost:3333/',
+    
 }
 }
