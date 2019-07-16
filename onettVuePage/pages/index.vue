@@ -1,5 +1,5 @@
 <template>
-<div class="row fluid-container ">
+<div class="row fluid-container mwidth ">
     <div class="col-sm-12 ">
         <NavBarItem class=""></NavBarItem>
     </div>

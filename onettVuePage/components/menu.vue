@@ -2,10 +2,10 @@
 <div>
 <div class="row d-flex flex-wrap align-items-center p-3">
   <div class="col-6">
-    <h1 class="">ONETT</h1>
+    <img :src="require('../assets/images/Onett_finalMob.png')" class="image-fluid" alt="">
   </div>
 <div class="col-6 text-right">
-    <b-button  v-b-modal.modal-1 variant="outline-dark">
+    <b-button  class="customButton gradientHover" v-b-modal.modal-1 >
         <font-awesome-icon :icon="['fas', 'bars']"/>
     </b-button>
     <b-modal id="modal-1">
@@ -13,7 +13,7 @@
         <h3 class="raleway greyColor">ONETT</h3>
       </template>
       <ul class="noList text-center  regularText raleway fill w-100">
-        <li v-for="linkItem in links" :key="linkItem.name" class="p-2 gradientHover greyColor"><b-button class="w-100 menuButton" :click="goTo(linkItem.link)">{{linkItem.name}}</b-button></li>
+        <li v-for="linkItem in links" :key="linkItem.name" class="p-2  greyColor"><b-button class="w-100 menuButton gradientHover" :click="goTo(linkItem.link)">{{linkItem.name}}</b-button></li>
       </ul>
       <template slot="modal-footer" slot-scope="{ ok, cancel, hide }">
       <b-button size="sm" class="customButton gradientHover" @click="hide('forget')">
@@ -59,9 +59,6 @@ export default {
            linkItem.active = false;
          }
       });
-    },
-    activateMenu(){
-      console.log("Hello World")
     },
     isMobile: function() {
       let check = false;

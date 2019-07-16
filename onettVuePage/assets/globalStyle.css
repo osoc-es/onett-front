@@ -50,7 +50,7 @@ body{
     font-size: 1.5rem;
 }
 .gradientHover:hover{
-    background: rgb(255,174,6);
+    /*background: rgb(255,174,6);*/
     background: linear-gradient(90deg, rgba(255,174,6,1) 0%, rgba(255,62,43,1) 100%);
     color: white;
     border-color: #ffffff;
@@ -63,12 +63,11 @@ body{
 background: inherit;
 border-radius: 5px;
 border-color: #616161;
-border: 2px solid;
 color:#616161
 }
 .menuButton{
     background: inherit;
     color:#616161; 
-    border-color: inherit;
+    border-color: white;
 
 }
