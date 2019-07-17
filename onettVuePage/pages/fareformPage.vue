@@ -10,7 +10,7 @@
 
 </style>
 <script>
-import travelform from '../components/travelform'
+import travelform from '../components/fareform'
 import NavBarItem from '../components/menu'
 export default {
     name:'travelpage',
