@@ -1,7 +1,7 @@
 <template>
-<div id="authorities" class="row mwidth">
-    <NavBarItem class="col-md-12"></NavBarItem>
-    <div class="container">
+<div id="authorities" class="mwidth">
+    <NavBarItem></NavBarItem>
+    <div class="container row mwidth">
         <fileuploaderform class="col-sm-12"></fileuploaderform>
     </div>
     <footeritem></footeritem>

@@ -1,6 +1,6 @@
 <template>
 <div>
-<div class="row d-flex flex-wrap align-items-center p-3">
+<div class="row d-flex flex-wrap align-items-center p-3 mwidth">
   <div class="col-6">
     <img :src="require('../assets/images/Onett_finalMob.png')" class="image-fluid" alt="">
   </div>
@@ -13,7 +13,7 @@
         <h3 class="raleway greyColor">ONETT</h3>
       </template>
       <ul class="noList text-center  regularText  fill w-100">
-        <li v-for="linkItem in links" :key="linkItem.name" class="p-2"><b-button class="w-100 outlineGradient outlineButton" :click="goTo(linkItem.link)">{{linkItem.name}}</b-button></li>
+        <li v-for="linkItem in links" :key="linkItem.name" class="p-2"><a :href="linkItem.link"><b-button class="w-100 outlineGradient outlineButton">{{linkItem.name}}</b-button></a></li>
       </ul>
       <template slot="modal-footer" slot-scope="{ ok, cancel, hide }">
       <b-button size="sm" class="outlineGradient outlineButton" @click="hide('forget')">
@@ -40,6 +40,7 @@ border: 2px solid;
 }
 </style>
 <script>
+import router from 'vue-router'
 export default {
   name:'NavBarItem',
   data(){
@@ -64,57 +65,28 @@ export default {
       let check = false;
       return check;
     },
-    goTo(link){
-      //router.go(link)
-    }
   },
   mounted(){
     this.currentUrl = window.location.pathname;
     this.links = [
-  {
-    name:"Fares",
-    link:"/fares",
-    active:false
-  },
-  {
-    name:"Schedules",
-    link:"/schedules",
-    active:false,
-  },
-  {
-    name:"Tickets",
-    link:"/tickets",
-    active:false
-  },
-  {
-    name:"Filters",
-    link:"/filters",
-    active:false,
-    
-  },
     {
-    name:"Lines",
-    link:"/lines",
-    active:false
-  },
-  {
-    name:"Notifications",
-    link:"/notifications",
-    active:false
-  },
+      name:"Home",
+      link:"/",
+      active:false
+    },
     {
-    name:"Settings",
-    link:"/settings",
+    name:"Fare Recomendator",
+    link:"/fareformpage",
     active:false
   },
   {
-    name:"Authorities", 
+    name:"Transport Authorities", 
     link:"/authorities",
     active:false,
   },
   {
     name:"About us",
-    link:"/about",
+    link:"https://osoc-es.github.io/onett/",
     active:false
   }
   ];
