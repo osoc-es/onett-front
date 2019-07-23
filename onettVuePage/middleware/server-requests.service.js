@@ -1,5 +1,5 @@
 const axios  = require('axios');
-const serverURL = 'http://localhost:3333/';
+const serverURL = 'http://localhost:3333';
  export async function uploadFile(form) {
     let uploaded = false
     let yarrrml = '';
@@ -11,7 +11,7 @@ const serverURL = 'http://localhost:3333/';
     bodyFormData.set('transport', form.transport);
     bodyFormData.append('file', form.file, form.filename);
     console.log(bodyFormData + "");
-    await axios.post(`${serverURL}upload/file`, bodyFormData,{ headers: {'Content-Type': 'multipart/form-data' }}
+    await axios.post(`${serverURL}`, bodyFormData,{ headers: {'Content-Type': 'multipart/form-data' }}
     ).then( async response =>{
       console.log(response.data)
       uploaded = await response.status == 200

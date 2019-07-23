@@ -1,6 +1,8 @@
 <template>
   <div class="">
-    <h1 class="raleway pt-2 pb-2">GTFS FILE UPLOADER</h1>
+    <h1 class="raleway pt-2 pb-2">GTFS TO TRANSMODEL</h1>
+    <div v-if="!correct" class="alert alert-danger">The file is not uploaded.</div>
+    <div v-else class="alert alert-success">File succesfully uploaded.</div>
     <div class="pb-2">
     <b-form-input
     v-model="form.country"
@@ -37,10 +39,8 @@
     ></b-form-file>      
     </div>
     <div class="pb-2 text-right">
-      <button class=" btn btn-outline-dark raleway" :onclick="upload()">UPLOAD</button>
+      <button class="outlineGradient outlineButton btn-lg" :onclick="upload()">UPLOAD</button>
     </div>
-    <div v-if="!correct" class="alert alert-danger">The file is not uploaded.</div>
-    <div v-else class="alert alert-success">File succesfully uploaded.</div>
   </div>
 </template>
 <style>

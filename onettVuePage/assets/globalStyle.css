@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:700&display=swap');
+body{
+    background: url('./images/bgNodes.jpg');
+}
 .raleway{
     font-family: 'Raleway', sans-serif;
 }

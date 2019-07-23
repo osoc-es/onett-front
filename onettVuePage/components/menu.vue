@@ -8,9 +8,9 @@
     <b-button  class="customButton gradientButton" v-b-modal.modal-1 >
         <font-awesome-icon :icon="['fas', 'bars']"/>
     </b-button>
-    <b-modal id="modal-1">
+    <b-modal id="modal-1" >
       <template slot="modal-title">
-        <h3 class="raleway greyColor">ONETT</h3>
+        <h3 class="raleway orangeText">ONETT</h3>
       </template>
       <ul class="noList text-center  regularText  fill w-100">
         <li v-for="linkItem in links" :key="linkItem.name" class="p-2"><a :href="linkItem.link"><b-button class="w-100 outlineGradient outlineButton">{{linkItem.name}}</b-button></a></li>
