@@ -6,7 +6,7 @@
             </b-form-group>
         </div>
         <div class="p-2">
-            <b-form-group label="How many travel will you take per day?"></b-form-group>
+            <b-form-group label="How many travels will you take per day?"></b-form-group>
             <b-form-input type="number" v-model="form.travels"></b-form-input>
         </div>
         <div class="p-2">

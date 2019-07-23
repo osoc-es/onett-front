@@ -13,9 +13,14 @@ const serverURL = 'http://localhost:3333';
     console.log(bodyFormData + "");
     await axios.post(`${serverURL}`, bodyFormData,{ headers: {'Content-Type': 'multipart/form-data' }}
     ).then( async response =>{
-      console.log(response.data)
+      let url = window.URL.createObjectURL(new Blob([response.data]));
+      let link = document.createElement('a');
+      link.href = url;
+      link.setAttribute('download', form.filename + '.tl'); //or any other extension
+      document.body.appendChild(link);
+      link.click();
       uploaded = await response.status == 200
-      yarrrml = await response.data.yarrrml;
+      console.log(response.data)
     }
     );
     console.log("Subimos un archivo?" + uploaded);
