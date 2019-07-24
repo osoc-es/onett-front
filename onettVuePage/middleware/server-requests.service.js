@@ -1,3 +1,5 @@
+import { promised, resolve, reject } from 'q';
+
 const axios  = require('axios');
 const serverURL = 'http://localhost:3333';
  export async function uploadFile(form) {
@@ -26,4 +28,14 @@ const serverURL = 'http://localhost:3333';
     console.log("Subimos un archivo?" + uploaded);
     console.log(message);
     return uploaded;
+}
+export function sendQuery(link){
+  let p = new Promise(async (resolve, reject) => {
+    await axios.get(link).then((response) => {
+      resolve(response.data);
+    }).catch((error) => {
+      reject(error);
+    });
+  });
+  return p;
 }

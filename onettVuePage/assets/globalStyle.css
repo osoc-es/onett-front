@@ -2,12 +2,22 @@
 body{
     background: url('./images/bgNodes.jpg');
 }
+.nodeBg{
+    background: url('./images/bgNodes.jpg');
+    background-position: center;
+}
+.transpOrangeBg{
+    background: rgba(238, 90, 36, .3)
+}
 .raleway{
     font-family: 'Raleway', sans-serif;
 }
 
 .redBg{
     background: red;
+}
+.orangeBg{
+    background: rgb(255, 122, 74)
 }
 .fill{
     min-height: 60vh;
@@ -29,8 +39,9 @@ a:hover{
     padding: 0%;
 }
 .mwidth{
-    max-width: 100%!important;
     width: 100%!important;
+    max-width: 100%!important;
+
 }
 .blackBg{
     background: #000000;
@@ -63,6 +74,10 @@ body{
 .greyColor{
     color: #616161;
 }
+.gradientBg{
+    background: linear-gradient(90deg, rgba(255,174,6,1) 0%, rgba(255,62,43,1) 100%);
+
+}
 .customButton{
 border-radius: 6px;
 border:none;
@@ -93,6 +108,24 @@ transition: 0.6s;
     background-size: 200%;
     transition: 0.3s;
 }
+.outlineWhiteButton{
+    border-color: white;
+    border-width:1px;
+    border-radius: 6px;
+    background: inherit;
+    text-transform: uppercase;
+    color: white;
+    background-size: 200%;
+    transition: 0.3s;
+}
+.outlineWhite:hover{
+    border-color: #ffffff;
+    border-width:1px;
+    color:#EE5A24;
+    background: #ffffff;
+    transition: 0.3s;
+
+}
 .outlineGradient:hover{
     border-color: #EE5A24;
     border-width:1px;
@@ -104,3 +137,13 @@ transition: 0.6s;
 .orangeText{
     color:#EE5A24!important;
 }
+.blueText{
+    color:#0465b2
+}
+.orangeBorder{
+    border-color: #EE5A24;
+    border-width: 1px;
+}
+.pre-formatted {
+    white-space: pre;
+  }

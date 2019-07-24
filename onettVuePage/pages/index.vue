@@ -1,16 +1,16 @@
 <template>
-<div class="fluid-container mwidth">
+<div class="fluid-container">
     <NavBarItem></NavBarItem>
-    <div class="row mwidth pt-5 pl-5 pr-5">
-        <div class="col-sm-12 container text-left raleway ">
-                <h2  class="orangeText">WANNA SPEND LESS?</h2>
-                <h5><span class="orangeText">ONETT</span> shows you the cheapest way to move around the city</h5>
+    <div class="row mwidth pt-3 pl-3 pr-3">
+        <div class="col-sm-12  text-center raleway p-5">
+                <h1  class="">WANNA SPEND LESS? </h1>  
+                <h2><span class="orangeText">ONETT</span> shows you the cheapest way to move around the city</h2>
+               
         </div>
     </div>
-    <div class="row mwidth pt-5">
-        <div class="col-sm-12 text-center">
-            <a href="/fareformpage"><b-button  class="gradientButton customButton raleway">Start to save up</b-button></a>
-        </div>
+    <div class="mt-5">
+        <h3 class="raleway  p-3">Proof of Concept about the power of the <span class="orangeText">RDF</span></h3>
+        <queriesitem></queriesitem>
     </div>
 </div>    
 </template>
@@ -18,11 +18,13 @@
 <script>
 import NavBarItem from '../components/menu'
 import fareform from '../components/fareform'
+import queriesitem from '../components/queriesitem'
 export default {
     name:'home',
     components:{
         NavBarItem,
-        fareform
+        fareform,
+        queriesitem
     },
     data(){
         return{clicked:false}
