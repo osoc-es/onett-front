@@ -2,7 +2,7 @@
 <div>
 <div class="row d-flex flex-wrap align-items-center p-3 mwidth">
   <div class="col-6">
-    <img :src="require('../assets/images/Onett_finalMob.png')" class="image-fluid" alt="">
+    <img :src="require('../assets/images/logo_mobile.png')" class="image-fluid" alt="">
   </div>
 <div class="col-6 text-right">
     <b-button  class="customButton gradientButton" v-b-modal.modal-1 >

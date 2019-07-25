@@ -39,7 +39,7 @@
     ></b-form-file>      
     </div>
     <div class="pb-2 text-right">
-      <button class="outlineGradient outlineButton btn-lg" :onclick="upload()">UPLOAD</button>
+      <button class="outlineGradient outlineButton btn-lg" v-on:click="upload()">UPLOAD</button>
     </div>
   </div>
 </template>
